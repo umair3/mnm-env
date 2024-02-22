@@ -1,0 +1,102 @@
+@page
+@model web.Pages_Web.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].District)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].Mineral)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].TitleOfLease)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].ReservePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].BidMoney)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].FinancialImpact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].NatureOfCase)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].DateOfApprovalRenewal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].DateOfExpiry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].CSRS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Approval[0].Remarks)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Approval) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.District)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mineral)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TitleOfLease)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReservePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BidMoney)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinancialImpact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NatureOfCase)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfApprovalRenewal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfExpiry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSRS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remarks)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

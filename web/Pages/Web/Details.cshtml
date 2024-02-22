@@ -1,0 +1,91 @@
+@page
+@model web.Pages_Web.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Approval</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.District)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.District)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.Mineral)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.Mineral)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.TitleOfLease)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.TitleOfLease)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.ReservePrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.ReservePrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.BidMoney)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.BidMoney)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.FinancialImpact)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.FinancialImpact)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.NatureOfCase)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.NatureOfCase)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.DateOfApprovalRenewal)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.DateOfApprovalRenewal)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.DateOfExpiry)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.DateOfExpiry)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.CSRS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.CSRS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.Status)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Approval.Remarks)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Approval.Remarks)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Approval.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

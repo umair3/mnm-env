@@ -1,0 +1,90 @@
+@page
+@model web.Pages_Web.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Approval</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Approval.Id" />
+            <div class="form-group">
+                <label asp-for="Approval.District" class="control-label"></label>
+                <input asp-for="Approval.District" class="form-control" />
+                <span asp-validation-for="Approval.District" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.Mineral" class="control-label"></label>
+                <input asp-for="Approval.Mineral" class="form-control" />
+                <span asp-validation-for="Approval.Mineral" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.TitleOfLease" class="control-label"></label>
+                <input asp-for="Approval.TitleOfLease" class="form-control" />
+                <span asp-validation-for="Approval.TitleOfLease" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.ReservePrice" class="control-label"></label>
+                <input asp-for="Approval.ReservePrice" class="form-control" />
+                <span asp-validation-for="Approval.ReservePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.BidMoney" class="control-label"></label>
+                <input asp-for="Approval.BidMoney" class="form-control" />
+                <span asp-validation-for="Approval.BidMoney" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.FinancialImpact" class="control-label"></label>
+                <input asp-for="Approval.FinancialImpact" class="form-control" />
+                <span asp-validation-for="Approval.FinancialImpact" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.NatureOfCase" class="control-label"></label>
+                <input asp-for="Approval.NatureOfCase" class="form-control" />
+                <span asp-validation-for="Approval.NatureOfCase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.DateOfApprovalRenewal" class="control-label"></label>
+                <input asp-for="Approval.DateOfApprovalRenewal" class="form-control" />
+                <span asp-validation-for="Approval.DateOfApprovalRenewal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.DateOfExpiry" class="control-label"></label>
+                <input asp-for="Approval.DateOfExpiry" class="form-control" />
+                <span asp-validation-for="Approval.DateOfExpiry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.CSRS" class="control-label"></label>
+                <input asp-for="Approval.CSRS" class="form-control" />
+                <span asp-validation-for="Approval.CSRS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.Status" class="control-label"></label>
+                <input asp-for="Approval.Status" class="form-control" />
+                <span asp-validation-for="Approval.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Approval.Remarks" class="control-label"></label>
+                <input asp-for="Approval.Remarks" class="form-control" />
+                <span asp-validation-for="Approval.Remarks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
