@@ -13,6 +13,7 @@ E:\mnm\mnm-env\mnm-env\web\obj\Debug\net8.0\web.csproj.CoreCompileInputs.cache
 E:\mnm\mnm-env\mnm-env\web\obj\Debug\net8.0\web.MvcApplicationPartsAssemblyInfo.cache
 E:\mnm\mnm-env\mnm-env\web\obj\Debug\net8.0\web.RazorAssemblyInfo.cache
 E:\mnm\mnm-env\mnm-env\web\obj\Debug\net8.0\web.RazorAssemblyInfo.cs
+E:\mnm\mnm-env\mnm-env\web\obj\Debug\net8.0\web.sourcelink.json
 E:\mnm\mnm-env\mnm-env\web\obj\Debug\net8.0\staticwebassets.build.json
 E:\mnm\mnm-env\mnm-env\web\obj\Debug\net8.0\staticwebassets.development.json
 E:\mnm\mnm-env\mnm-env\web\obj\Debug\net8.0\staticwebassets\msbuild.web.Microsoft.AspNetCore.StaticWebAssets.props

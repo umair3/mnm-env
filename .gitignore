@@ -2,3 +2,5 @@
 .vs/*
 web/bin
 web/bin/*
+web/obj
+web/obj/*
