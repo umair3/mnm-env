@@ -15,3 +15,6 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet aspnet-codegenerator razorpage -m Movie -dc RazorPagesMovie.Data.RazorPagesMovieContext -udl -outDir Pages/Movies --referenceScriptLibraries --databaseProvider sqlite
 dotnet ef migrations add InitialCreate
 dotnet ef database update
+dotnet clean
+dotnet build
+dotnet run
