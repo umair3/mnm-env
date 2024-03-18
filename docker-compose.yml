@@ -1,0 +1,9 @@
+version: '3'
+services:
+  your-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: efd_portal
+    ports:
+      - "8080:80"  # Adjust the port as needed
