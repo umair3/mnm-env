@@ -16,6 +16,10 @@ public class Approval
     public DateTime DateOfExpiry { get; set; }
     public string? CSRS { get; set; }
     public string? Status { get; set; }
+    public string? SIRConducted { get; set; } // Site Inspection Report
+    public string? ComplianceStatus { get; set; } // CSR - Compliance Status Report/COMPLETE/INCOMPLETE
+    [DataType(DataType.Date)]
+    public DateTime? DateOfFiling { get; set; }
     public string? Remarks { get; set; }
 
 }

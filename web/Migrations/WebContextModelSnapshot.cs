@@ -29,10 +29,16 @@ namespace web.Migrations
                     b.Property<string>("CSRS")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ComplianceStatus")
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("DateOfApprovalRenewal")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("DateOfExpiry")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("DateOfFiling")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("District")
@@ -52,6 +58,9 @@ namespace web.Migrations
 
                     b.Property<int>("ReservePrice")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("SIRConducted")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Status")
                         .HasColumnType("TEXT");
