@@ -22,22 +22,23 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
         <table className="table-auto">
           <thead>
             <tr>
-              <th>Id</th>
-              <th>District</th>
-              <th>Mineral</th>
-              <th>Title of Lease</th>
-              <th>Reserve Price</th>
-              <th>Bid Money</th>
-              <th>Financial Impact</th>
-              <th>Nature of Case</th>
-              <th>Date of Approval/Renewal</th>
-              <th>Date of Expiry</th>
-              <th>CSRS</th>
-              <th>Status</th>
-              <th>SIR Conducted</th>
-              <th>Compliance Status</th>
-              <th>Date of Filing</th>
-              <th>Remarks</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Id</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">District</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Mineral</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Title of Lease</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Reserve Price</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Bid Money</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Financial Impact</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Nature of Case</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date of Approval/Renewal</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date of Expiry</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">CSRS</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Status</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">SIR Conducted</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Compliance Status</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date of Filing</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Remarks</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"></th>
             </tr>
           </thead>
           <tbody>
@@ -58,6 +59,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td></td>
               <td></td>
               <td></td>
+              <td><a href="#">Edit</a></td>
             </tr>
             <tr>
               <td>2</td>
@@ -76,6 +78,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td></td>
               <td></td>
               <td></td>
+              <td><a href="#">Edit</a></td>
             </tr>
             <tr>
               <td>3</td>
@@ -94,6 +97,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td></td>
               <td></td>
               <td></td>
+              <td><a href="#">Edit</a></td>
             </tr>
             <tr>
               <td>4</td>
@@ -112,6 +116,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td></td>
               <td></td>
               <td></td>
+              <td><a href="#">Edit</a></td>
             </tr>
             <tr>
               <td>5</td>
@@ -130,6 +135,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td></td>
               <td></td>
               <td></td>
+              <td><a href="#">Edit</a></td>
             </tr>
           </tbody>
         </table>
