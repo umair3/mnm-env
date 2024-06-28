@@ -28,15 +28,15 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Title of Lease</th>
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Reserve Price</th>
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Bid Money</th>
-              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Financial Impact</th>
+              {/* <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Financial Impact</th> */}
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Nature of Case</th>
-              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date of Approval/Renewal</th>
-              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date of Expiry</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date of IEE/EIA Approval/Renewal</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date of IEE/EIA Expiry</th>
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">CSRS</th>
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Status</th>
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">SIR Conducted</th>
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Compliance Status</th>
-              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date of Filing</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date of IEE/EIA Filing (FRESH/RENEWAL CASES)</th>
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Remarks</th>
               <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"></th>
             </tr>
@@ -49,7 +49,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td>No.Ml/DDM&M. LHR. Ordinary Sand.Manga Mandi Zone</td>
               <td>10,01,01,000</td>
               <td></td>
-              <td></td>
+              {/* <td></td> */}
               <td></td>
               <td>14.04.2023</td>
               <td>13.04.2026</td>
@@ -68,7 +68,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td>No.Ml/DDM&M. LHR. Ordinary Sand. Saggian.</td>
               <td>10,59,50,000</td>
               <td></td>
-              <td></td>
+              {/* <td></td> */}
               <td></td>
               <td>16.11.2022</td>
               <td>15.11.2025</td>
@@ -87,7 +87,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td>No.Ml/DDM&M. LHR. Ordinary Sand. Bhadru/Chamrupur Zone</td>
               <td>12,20,02,000</td>
               <td></td>
-              <td></td>
+              {/* <td></td> */}
               <td></td>
               <td>14.04.2023</td>
               <td>13.04.2026</td>
@@ -106,7 +106,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td>No.Ml/DDM&M. LHR. Ordinary Sand. Khud Pur Zone.</td>
               <td>5,45,00,000</td>
               <td></td>
-              <td></td>
+              {/* <td></td> */}
               <td></td>
               <td>06.01.2022</td>
               <td>05.01.2025</td>
@@ -125,7 +125,7 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
               <td>No.Ml/DDM&M. LHR. Ordinary Sand. Muridwal/Niaz Beg Zone</td>
               <td>19,10,00,000</td>
               <td></td>
-              <td></td>
+              {/* <td></td> */}
               <td></td>
               <td>14.04.2023</td>
               <td>13.04.2026</td>

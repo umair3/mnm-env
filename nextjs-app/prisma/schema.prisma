@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Approval {
+  id                           Int                     @id @default(autoincrement())
+  date                         DateTime
+  district                     String
+  mineral                      String
+  title_of_lease               String
+  reserve_price                Int?                    @default(0)
+  bid_money                    Int?                    @default(0)
+  nature_of_case               String?
+  date_of_approval_renewal     DateTime?               @db.Date
+  date_of_expiry               DateTime?               @db.Date
+  csrs                         String?
+  status                       String?
+  sir_conducted                String?
+  compliance_status            String?
+  date_of_filing               DateTime?               @db.Date
+  remarks                      String?
+}
+
