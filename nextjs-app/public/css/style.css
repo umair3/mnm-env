@@ -9,8 +9,288 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+ @media screen and (min-device-width: 1024px) and (max-device-width: 1280px){
+ :root{
+  background-color: white !important;
+ }
+ main,div.m-10{
+  margin: 0px !important;
+ }
+  body{
+    background-color: white !important;
+    color: black;
+  }
+  table{
+    display: inline-block;
+    transform: scale(0.64);
+    transform-origin: top left;
+  }
+  th{
+    background-color: #71d7ff !important;
+    color: #000 !important;
+  }
+  tr{
+    background-color: #a0ffa0 !important;
+  }
+  table, th, td {
+    border: 1px solid rgb(50, 50, 50) !important;
+  }
+  img{
+    width: 150px !important;
+  }
+  .capitalize{
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  strong,p{
+    font-size: medium !important;
+    font-weight: bolder !important;
+    margin-left: 4px !important;
+  }
+  p.text-center.text-gray-500.text-xs{
+    color: black;
+  }
 
-html {
+ }
+@media screen and (min-device-width: 1281px) and (max-device-width: 1536px){
+  :root{
+    background-color: white !important;
+   }
+  body{
+    background-color: white !important;
+    color: black;
+  }
+  main,div.m-10{
+    margin: 0px !important;
+   }
+   table{
+    display: inline-block;
+    transform: scale(0.91);
+    transform-origin: top left;
+  }
+  th{
+    background-color: #71d7ff !important;
+    color: #000 !important;
+  }
+  tr{
+    background-color: #a0ffa0 !important;
+  }
+  table, th, td {
+    border: 1px solid rgb(50, 50, 50) !important;
+  }
+  td{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  p.text-center.text-gray-500.text-xs{
+    color: black;
+    font-size: large;
+  }
+ }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px){
+  :root{
+   background-color: white !important;
+  }
+  main,div.m-10{
+   margin: 0px !important;
+  }
+   body{
+     background-color: white !important;
+     color: black;
+     font-size: larger;
+   }
+   table{
+    display: inline-block;
+    transform: scale(0.62);
+    transform-origin: top left;
+  }
+   th{
+     background-color: #71d7ff !important;
+     color: #000 !important;
+   }
+   tr{
+     background-color: #a0ffa0 !important;
+   }
+   table, th, td {
+     border: 1px solid rgb(50, 50, 50) !important;
+   }
+   img{
+     width: 150px !important;
+   }
+   .capitalize{
+     font-size: x-large;
+     font-weight: bolder;
+   }
+   strong,p{
+     font-size: medium !important;
+     font-weight: bolder !important;
+     margin-left: 4px !important;
+   }
+   p.text-center.text-gray-500.text-xs{
+     color: black;
+     margin-left: 50% !important;
+   }
+ 
+  }
+  @media screen and (min-device-width: 640px) and (max-device-width: 767px){
+    :root{
+     background-color: white !important;
+    }
+    main,div.m-10{
+     margin: 0px !important;
+    }
+     body{
+       background-color: white !important;
+       color: black;
+     }
+     table{
+    }
+     th{
+       background-color: #71d7ff !important;
+       color: #000 !important;
+     }
+     tr{
+       background-color: #a0ffa0 !important;
+     }
+     table, th, td {
+       border: 1px solid rgb(50, 50, 50) !important;
+     }
+     img{
+       width: 150px !important;
+     }
+     .capitalize{
+       font-size: x-large;
+       font-weight: bolder;
+     }
+     strong,p{
+       font-size: medium !important;
+       font-weight: bolder !important;
+       margin-left: 4px !important;
+     }
+     p.text-center.text-gray-500.text-xs{
+       color: black;
+     }
+   
+    }
+
+
+@media screen and (min-device-width: 480px) and (max-device-width: 639px){
+      :root{
+       background-color: white !important;
+      }
+      main,div.m-10{
+       margin: 0px !important;
+      }
+       body{
+         background-color: white !important;
+         color: black;
+       }
+       th{
+         background-color: #71d7ff !important;
+         color: #000 !important;
+       }
+       tr{
+         background-color: #a0ffa0 !important;
+       }
+       table, th, td {
+         border: 1px solid rgb(50, 50, 50) !important;
+       }
+       img{
+         width: 150px !important;
+       }
+       .capitalize{
+         font-size: x-large;
+         font-weight: bolder;
+       }
+       strong,p{
+         font-size: medium !important;
+         font-weight: bolder !important;
+         margin-left: 4px !important;
+       }
+       p.text-center.text-gray-500.text-xs{
+         color: black;
+       }
+     
+      }
+      @media screen and (min-device-width: 375px) and (max-device-width: 479px){
+        :root{
+         background-color: white !important;
+        }
+        main,div.m-10{
+         margin: 0px !important;
+        }
+         body{
+           background-color: white !important;
+           color: black;
+         }
+         th{
+           background-color: #71d7ff !important;
+           color: #000 !important;
+         }
+         tr{
+           background-color: #a0ffa0 !important;
+         }
+         table, th, td {
+           border: 1px solid rgb(50, 50, 50) !important;
+         }
+         img{
+           width: 150px !important;
+         }
+         .capitalize{
+           font-size: x-large;
+           font-weight: bolder;
+         }
+         strong,p{
+           font-size: medium !important;
+           font-weight: bolder !important;
+           margin-left: 4px !important;
+         }
+         p.text-center.text-gray-500.text-xs{
+           color: black;
+         }
+       
+        }
+        @media screen and (min-device-width: 320px) and (max-device-width: 374px){
+          :root{
+           background-color: white !important;
+          }
+          main,div.m-10{
+           margin: 0px !important;
+          }
+           body{
+             background-color: white !important;
+             color: black;
+           }
+           th{
+             background-color: #71d7ff !important;
+             color: #000 !important;
+           }
+           tr{
+             background-color: #a0ffa0 !important;
+           }
+           table, th, td {
+             border: 1px solid rgb(50, 50, 50) !important;
+           }
+           img{
+             width: 150px !important;
+           }
+           .capitalize{
+             font-size: x-large;
+             font-weight: bolder;
+           }
+           strong,p{
+             font-size: medium !important;
+             font-weight: bolder !important;
+             margin-left: 4px !important;
+           }
+           p.text-center.text-gray-500.text-xs{
+             color: black;
+           }
+         
+          }
+
+ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -30,9 +310,9 @@ body {
  * Render the `main` element consistently in IE.
  */
 
-main {
+/* main {
   display: block;
-}
+} */
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
