@@ -10,15 +10,15 @@ export default function DistrictDropdown(props: DistrictDropdownProps) {
     return (
         <div className="col-md-6">
             <div className="form-floating">
-                <select defaultValue={props.value} className="form-control" id="district" name="district" required onChange={props.handleSelectChange}>
-                    <option value="">All districts</option>
+                <select defaultValue={props.value} id="district" name="district" required onChange={props.handleSelectChange}
+                className="m-2 p-2 border-2 border-gray-400 rounded-lg text-md">
+                    <option value="">Choose a district</option>
                     {district_options.map((district, index) => (
                     <option key={index} value={district}>
                         {district}
                     </option>
                     ))}
                 </select>
-                <label htmlFor="district">District</label>
             </div>
         </div>
     )

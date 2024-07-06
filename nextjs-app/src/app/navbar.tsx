@@ -9,7 +9,7 @@ export default function Navbar() {
           <Image src='/img/logo.png' alt='ENV' width='80' height='80' className="w-10 flex-none"></Image>
           <div className='p-1'>
             <strong className="capitalize ml-1 flex-1">{metadata.title}</strong>
-            <p>Environment Facilitation Division, DGMM</p>
+            <p>Environment Facilitation Division</p>
           </div>
           
           {/* <button id="sliderBtn" className="flex-none text-right text-gray-900 hidden md:block">

@@ -1,3 +1,4 @@
+import { PrismaClient } from "@prisma/client"
 import Footer from '../footer'
 import Navbar from '../navbar'
 
@@ -6,14 +7,20 @@ interface ApprovalSearchProps {
   searchParams: {
     status?: string;
     mineral?: string;
-    office?: string;
     district?: string;
   };
 }
 
+const prisma = new PrismaClient()
 
-export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
-  const { status, mineral, office, district } = searchParams;
+export default async function ApprovalsPage({searchParams}: ApprovalSearchProps) {
+  const { status, mineral, district } = searchParams;
+    const approvals = await prisma.approval.findMany({
+        where: status ? { status } : {},
+        orderBy: {
+            id: "asc",
+        }
+    })
   return (
     <main className="h-screen container-xxl bg-white p-0">
       <Navbar/>
@@ -42,25 +49,28 @@ export default function ApprovalsPage({searchParams}: ApprovalSearchProps) {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Lahore</td>
-              <td>Ordinary Sand</td>
-              <td>No.Ml/DDM&M. LHR. Ordinary Sand.Manga Mandi Zone</td>
-              <td>10,01,01,000</td>
-              <td></td>
-              {/* <td></td> */}
-              <td></td>
-              <td>14.04.2023</td>
-              <td>13.04.2026</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><a href="#">Edit</a></td>
-            </tr>
+            {approvals.map((item, index)=> {
+                return <tr>
+                <td>{item.id}</td>
+                <td>{item.district}</td>
+                <td>{item.mineral}</td>
+                <td>{item.title_of_lease}</td>
+                <td>{item.reserve_price}</td>
+                <td>{item.bid_money}</td>
+                {/* <td></td> */}
+                <td>{item.nature_of_case}</td>
+                <td>{item.date_of_approval_renewal?.toDateString()}</td>
+                <td>{item.date_of_expiry?.toDateString()}</td>
+                <td>{item.csrs}</td>
+                <td>{item.status}</td>
+                <td>{item.sir_conducted}</td>
+                <td>{item.compliance_status}</td>
+                <td>{item.date_of_filing?.toDateString()}</td>
+                <td>{item.remarks}</td>
+                <td><a href="#">Edit</a></td>
+              </tr>
+            })}
+            
             <tr>
               <td>2</td>
               <td>Lahore</td>
