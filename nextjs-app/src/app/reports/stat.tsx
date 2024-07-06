@@ -9,7 +9,7 @@ export interface FieldOfficeProps {
 export default function Stat(stat: {title: string, value: string | undefined, status: string}) {
   return (
     <div className="btn m-2 col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-        <a className="cat-item d-block bg-light text-center rounded p-3" href={`approvals?status=${stat.status}`}>
+        <a className="cat-item d-block bg-light text-center rounded-full p-3" href={`approvals?status=${stat.status}`}>
             <div className="rounded p-4">
                 {/* <div className="icon mb-3">
                     <img class="img-fluid" src="img/icon-apartment.png" alt="Icon">

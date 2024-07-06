@@ -14,16 +14,6 @@ export default async function StatsList() {
         console.log("CaseForm.handleSelectChange("+e.target.value+")")
         const { name, value } = e.target;
     }
-    // const total_assessed_amount = await prisma.approval.aggregate({
-    //     _sum: {
-    //         assessment_amount: true,
-    //     },
-    // })
-    // const total_recovered_amount = await prisma.case.aggregate({
-    //     _sum: {
-    //         recovered_amount: true,
-    //     },
-    // })
     const total_cases = await prisma.approval.aggregate({
         _count: {
             id: true,
@@ -36,26 +26,6 @@ export default async function StatsList() {
         where: {
             status: {
               equals: 'APPROVED',
-            },
-        },
-    })
-    const pending_dg_office = await prisma.approval.aggregate({
-        _count: {
-            id: true,
-        },
-        where: {
-            status: {
-              equals: 'DGMM',
-            },
-        },
-    })
-    const pending_dg_office_la_division = await prisma.approval.aggregate({
-        _count: {
-            id: true,
-        },
-        where: {
-            status: {
-              equals: 'LA_DIVISION',
             },
         },
     })
@@ -98,18 +68,6 @@ export default async function StatsList() {
               equals: 'RENEWAL',
             },
         },
-    })
-    const unknown = await prisma.approval.aggregate({
-        _count: {
-            id: true,
-        },
-        where: {
-            OR : [
-                    {status: {equals: ''}},
-                    {status: {equals: null}},
-                    {status: {equals: undefined}}
-            ]
-        }
     })
 
     return (
