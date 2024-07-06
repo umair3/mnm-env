@@ -9,10 +9,71 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+ @media screen and (min-device-width: 1281px) and (max-device-width: 1536px){
+  :root{
+    background-color: white !important;
+   }
+   main{
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+  body{
+    background-color: white !important;
+    color: black;
+  }
+  img{
+    width: 150px !important;
+  }
+  main,div.m-10{
+    margin: 0px !important;
+   }
+   table{
+    display: inline-block;
+    transform-origin: top left;
+    transform: scale(0.278);
+    min-width: max-content;
+    overflow-y: scroll;
+  }
+  th{
+    background-color: #71d7ff !important;
+    color: #000 !important;
+    font-size: large;
+    font-weight: bolder;
+    position: sticky;
+    text-align: center !important;
+    font-size: xx-large !important;
+  }
+  tr{
+    background-color: #a0ffa0 !important;
+    font-size: xx-large !important;
+  }
+
+  table, th, td {
+    border: 1px solid rgb(50, 50, 50) !important;
+    padding: 10px;
+  }
+  td{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  p.text-center.text-gray-500.text-xs{
+    color: black;
+    font-size: x-large !important;
+  }
+  strong,p{
+    font-size: medium !important;
+    font-weight: bolder !important;
+    margin-left: 4px !important;
+  }
+ }
  @media screen and (min-device-width: 1024px) and (max-device-width: 1280px){
  :root{
   background-color: white !important;
  }
+ main{
+  height: 100vh !important;
+  width: 100vw !important;
+}
  main,div.m-10{
   margin: 0px !important;
  }
@@ -22,18 +83,27 @@
   }
   table{
     display: inline-block;
-    transform: scale(0.64);
+    transform: scale(0.4);
     transform-origin: top left;
+    min-width: max-content;
+    overflow-y: scroll;
+    overflow-x: scroll; 
   }
   th{
     background-color: #71d7ff !important;
     color: #000 !important;
+    position: sticky;
+    text-align: center !important;
+    font-size: xx-large !important;
   }
   tr{
     background-color: #a0ffa0 !important;
+    margin: 20px;
+    font-size: xx-large !important;
   }
   table, th, td {
     border: 1px solid rgb(50, 50, 50) !important;
+    padding: 10px;
   }
   img{
     width: 150px !important;
@@ -49,42 +119,8 @@
   }
   p.text-center.text-gray-500.text-xs{
     color: black;
-  }
-
- }
-@media screen and (min-device-width: 1281px) and (max-device-width: 1536px){
-  :root{
-    background-color: white !important;
-   }
-  body{
-    background-color: white !important;
-    color: black;
-  }
-  main,div.m-10{
-    margin: 0px !important;
-   }
-   table{
-    display: inline-block;
-    transform: scale(0.91);
-    transform-origin: top left;
-  }
-  th{
-    background-color: #71d7ff !important;
-    color: #000 !important;
-  }
-  tr{
-    background-color: #a0ffa0 !important;
-  }
-  table, th, td {
-    border: 1px solid rgb(50, 50, 50) !important;
-  }
-  td{
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-  p.text-center.text-gray-500.text-xs{
-    color: black;
-    font-size: large;
+    font-size: x-large !important;
+    margin-top: 20px;
   }
  }
 
@@ -95,28 +131,43 @@
   main,div.m-10{
    margin: 0px !important;
   }
+  main{
+    height: 100vh !important;
+    width: 100vw !important;
+  }
    body{
      background-color: white !important;
      color: black;
      font-size: larger;
    }
    table{
+    margin-top: 50px;
     display: inline-block;
-    transform: scale(0.62);
+    transform: scale(0.36);
     transform-origin: top left;
+    min-width: max-content;
+    overflow-y: scroll;
   }
-   th{
-     background-color: #71d7ff !important;
-     color: #000 !important;
-   }
+  th{
+    background-color: #71d7ff !important;
+    color: #000 !important;
+    position: sticky;
+    text-align: center !important;
+    font-size: xx-large !important;
+  }
    tr{
      background-color: #a0ffa0 !important;
+     font-size: xx-large !important;
    }
    table, th, td {
      border: 1px solid rgb(50, 50, 50) !important;
+     padding: 10px;
+   }
+   tbody,tr{
+    font-size: larger;
    }
    img{
-     width: 150px !important;
+     width: 120px !important;
    }
    .capitalize{
      font-size: x-large;
@@ -129,165 +180,268 @@
    }
    p.text-center.text-gray-500.text-xs{
      color: black;
-     margin-left: 50% !important;
-   }
- 
+     font-size: x-large !important;
+   } 
   }
   @media screen and (min-device-width: 640px) and (max-device-width: 767px){
     :root{
-     background-color: white !important;
-    }
-    main,div.m-10{
-     margin: 0px !important;
-    }
-     body{
-       background-color: white !important;
-       color: black;
+      background-color: white !important;
      }
-     table{
-    }
+     main,div.m-10{
+      margin: 0px !important;
+     }
+     main{
+       height: 100vh !important;
+       width: 100% !important;
+     }
+      body{
+        background-color: white !important;
+        color: black;
+        font-size: xx-large;
+      }
+      table{
+       margin-top: 50px;
+       display: inline-block;
+       transform: scale(1);
+       transform-origin: top left;
+       min-width: max-content;
+       overflow-y: scroll;
+       overflow-x: scroll;
+       width: 100%;
+     }
      th{
        background-color: #71d7ff !important;
        color: #000 !important;
-     }
-     tr{
-       background-color: #a0ffa0 !important;
-     }
-     table, th, td {
-       border: 1px solid rgb(50, 50, 50) !important;
-     }
-     img{
-       width: 150px !important;
-     }
-     .capitalize{
-       font-size: x-large;
-       font-weight: bolder;
-     }
-     strong,p{
-       font-size: medium !important;
-       font-weight: bolder !important;
-       margin-left: 4px !important;
-     }
-     p.text-center.text-gray-500.text-xs{
-       color: black;
-     }
-   
-    }
+       position: sticky;
+       text-align: center !important;
+       font-size: xx-large !important;
+       }
+      tr{
+        background-color: #a0ffa0 !important;
+        font-size: x-large;
+      }
+      table, th, td {
+        border: 1px solid rgb(50, 50, 50) !important;
+        padding: 10px;
+      }
+      tbody,tr{
+       font-size: larger;
+      }
+      img{
+        width: 120px !important;
+      }
+      .capitalize{
+        font-size: xx-large !important;
+        font-weight: bolder;
+      }
+      strong,p{
+        font-size: xx-large !important;
+        font-weight: bolder !important;
+        margin-left: 4px !important;
 
-
+      }
+      p.text-center.text-gray-500.text-xs{
+        color: black;
+        font-size: xx-large !important;
+        margin-top: 20px;
+        line-height: 40px;
+      } 
+     }
 @media screen and (min-device-width: 480px) and (max-device-width: 639px){
-      :root{
-       background-color: white !important;
-      }
-      main,div.m-10{
-       margin: 0px !important;
-      }
-       body{
-         background-color: white !important;
-         color: black;
-       }
-       th{
-         background-color: #71d7ff !important;
-         color: #000 !important;
-       }
-       tr{
-         background-color: #a0ffa0 !important;
-       }
-       table, th, td {
-         border: 1px solid rgb(50, 50, 50) !important;
-       }
-       img{
-         width: 150px !important;
-       }
-       .capitalize{
-         font-size: x-large;
-         font-weight: bolder;
-       }
-       strong,p{
-         font-size: medium !important;
-         font-weight: bolder !important;
-         margin-left: 4px !important;
-       }
-       p.text-center.text-gray-500.text-xs{
-         color: black;
-       }
-     
-      }
+  :root{
+    background-color: white !important;
+   }
+   main,div.m-10{
+    margin: 0px !important;
+   }
+   main{
+     height: 100vh !important;
+     width: 100% !important;
+   }
+    body{
+      background-color: white !important;
+      color: black;
+      font-size: larger;
+    }
+    table{
+     margin-top: 50px;
+     display: inline-block;
+     transform: scale(1);
+     transform-origin: top left;
+     min-width: max-content;
+     overflow-y: scroll;
+     overflow-x: scroll;
+     width: 100%;
+    }
+   th{
+     background-color: #71d7ff !important;
+     color: #000 !important;
+     position: sticky;
+     text-align: center !important;
+     font-size: xx-large !important;
+    }
+    tr{
+      background-color: #a0ffa0 !important;
+      font-size: x-large;
+    }
+    table, th, td {
+      border: 1px solid rgb(50, 50, 50) !important;
+      padding: 10px;
+    }
+    tbody,tr{
+     font-size: larger;
+    }
+    img{
+      width: 100px !important;
+    }
+    .capitalize{
+      font-size: xx-large !important;
+      font-weight: bolder;
+    }
+    strong,p{
+      font-size: xx-large !important;
+      font-weight: bolder !important;
+      margin-left: 4px !important;
+    }
+    p.text-center.text-gray-500.text-xs{
+      color: black;
+      font-size: x-large !important;
+      margin-top: 20px;
+      line-height: 30px;
+    }
+  
+   }
       @media screen and (min-device-width: 375px) and (max-device-width: 479px){
         :root{
-         background-color: white !important;
-        }
-        main,div.m-10{
-         margin: 0px !important;
-        }
-         body{
-           background-color: white !important;
-           color: black;
+          background-color: white !important;
          }
+         main,div.m-10{
+          margin: 0px !important;
+          }
+         main{
+           height: 100vh !important;
+           width: 100% !important;
+          }
+          body{
+            background-color: white !important;
+            color: black;
+            font-size: larger;
+          }
+          h3.h2{
+            font-size: xx-large;
+          }
+          table{
+           margin-top: 50px;
+           display: inline-block;
+           transform: scale(1);
+           transform-origin: top left;
+           min-width: max-content;
+           overflow-y: scroll;
+           overflow-x: scroll;
+           width: 100%;
+          }
          th{
            background-color: #71d7ff !important;
            color: #000 !important;
-         }
-         tr{
-           background-color: #a0ffa0 !important;
-         }
-         table, th, td {
-           border: 1px solid rgb(50, 50, 50) !important;
-         }
-         img{
-           width: 150px !important;
-         }
-         .capitalize{
-           font-size: x-large;
-           font-weight: bolder;
-         }
-         strong,p{
-           font-size: medium !important;
-           font-weight: bolder !important;
-           margin-left: 4px !important;
-         }
-         p.text-center.text-gray-500.text-xs{
-           color: black;
-         }
-       
+           position: sticky;
+           text-align: center !important;
+           font-size: xx-large !important;
+          }
+          tr{
+            background-color: #a0ffa0 !important;
+            font-size: x-large;
+          }
+          table, th, td {
+            border: 1px solid rgb(50, 50, 50) !important;
+            padding: 10px;
+          }
+          tbody,tr{
+           font-size: larger;
+          }
+          img{
+            width: 100px !important;
+          }
+          .capitalize{
+            font-size: xx-large !important;
+            font-weight: bolder;
+          }
+          strong,p{
+            font-size: xx-large !important;
+            font-weight: bolder !important;
+            margin-left: 4px !important;
+          }
+          p.text-center.text-gray-500.text-xs{
+            color: black;
+            font-size: x-large !important;
+            margin-top: 20px;
+            line-height: 30px;
+          }
         }
         @media screen and (min-device-width: 320px) and (max-device-width: 374px){
           :root{
-           background-color: white !important;
-          }
-          main,div.m-10{
-           margin: 0px !important;
-          }
-           body{
-             background-color: white !important;
-             color: black;
+            background-color: white !important;
            }
+           main,div.m-10{
+            margin: 0px !important;
+           }
+           main{
+             height: 100vh !important;
+             width: 100% !important;
+             }
+            body{
+              background-color: white !important;
+              color: black;
+              font-size: larger;
+            }
+            h3.h2{
+              font-size: xx-large !important;
+            }
+            table{
+             margin-top: 50px;
+             display: inline-block;
+             transform: scale(1);
+             transform-origin: top left;
+             min-width: max-content;
+             overflow-y: scroll;
+             overflow-x: scroll;
+             width: 100%;
+            }
            th{
              background-color: #71d7ff !important;
              color: #000 !important;
-           }
-           tr{
-             background-color: #a0ffa0 !important;
-           }
-           table, th, td {
-             border: 1px solid rgb(50, 50, 50) !important;
-           }
-           img{
-             width: 150px !important;
-           }
-           .capitalize{
-             font-size: x-large;
-             font-weight: bolder;
-           }
-           strong,p{
-             font-size: medium !important;
-             font-weight: bolder !important;
-             margin-left: 4px !important;
-           }
-           p.text-center.text-gray-500.text-xs{
-             color: black;
-           }
-         
+             position: sticky;
+             text-align: center !important;
+             font-size: xx-large !important;
+            }
+            tr{
+              background-color: #a0ffa0 !important;
+              font-size: x-large;
+            }
+            table, th, td {
+              border: 1px solid rgb(50, 50, 50) !important;
+              padding: 10px;
+            }
+            tbody,tr{
+             font-size: larger;
+            }
+            img{
+              width: 100px !important;
+            }
+            .capitalize{
+              font-size: xx-large !important;
+              font-weight: bolder;
+            }
+            strong,p{
+              font-size: xx-large !important;
+              font-weight: bolder !important;
+              margin-left: 4px !important;
+            }
+            p.text-center.text-gray-500.text-xs{
+              color: black;
+              font-size: x-large !important;
+              margin-top: 20px;
+              line-height: 30px;
+            }
           }
 
  html {
