@@ -4,4 +4,5 @@ web/bin
 web/bin/*
 web/obj
 web/obj/*
-*package-lock.json
+package-lock.json
+nextjs-app/package-lock.json
