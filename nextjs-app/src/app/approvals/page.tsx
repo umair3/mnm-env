@@ -26,6 +26,11 @@ export default async function ApprovalsPage({searchParams}: ApprovalSearchProps)
       <Navbar/>
       <div className="flex flex-row flex-wrap m-10">
         <h3 className='h2'>Approvals Listing Page</h3>
+        {/* <div className="flex">
+            <DistrictDropdown handleSelectChange={handleSelectChange} />
+            <MineralDropdown handleSelectChange={handleSelectChange} />
+            <DateRangeField />
+        </div> */}
         <table className="table-auto">
           <thead>
             <tr>

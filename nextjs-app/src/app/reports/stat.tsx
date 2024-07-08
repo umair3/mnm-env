@@ -8,14 +8,14 @@ export interface FieldOfficeProps {
 }
 export default function Stat(stat: {title: string, value: string | undefined, status: string}) {
   return (
-    <div className="btn m-2 col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div className="flex items-center btn m-2 col-lg-3 col-sm-6 wow fadeInUp rounded-full w-48 h-48" data-wow-delay="0.1s">
         <a className="cat-item d-block bg-light text-center rounded-full p-3" href={`approvals?status=${stat.status}`}>
             <div className="rounded p-4">
                 {/* <div className="icon mb-3">
                     <img class="img-fluid" src="img/icon-apartment.png" alt="Icon">
                     <Image src="/img/icon-apartment.png" alt="Icon" width={100} height={100}/>
                 </div> */}
-                <h6>{stat.title}</h6>
+                <h4 className='font-bold'>{stat.title}</h4>
                 <span>{stat.value}</span>
             </div>
         </a>

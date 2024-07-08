@@ -5,6 +5,8 @@ import DistrictDropdown from './district-dropdown'
 import MineralDropdown from './mineral-dropdown'
 import { FieldOfficeProps } from './field-office-dropdown'
 import { PrismaClient } from '@prisma/client'
+import DateField from './date-field'
+import DateRangeField from './date-range-field'
 
 const prisma = new PrismaClient()
 
@@ -76,14 +78,14 @@ export default async function StatsList() {
                 <div className="flex">
                     <DistrictDropdown handleSelectChange={handleSelectChange} />
                     <MineralDropdown handleSelectChange={handleSelectChange} />
-                    {/* Datewise/Districtwise */}
+                    <DateRangeField />
                 </div>
                 <div className="flex">
                     <Stat status='' title='Total Cases' value={total_cases._count.id?.toString()} />
-                    <Stat status='APPROVED' title='Total Approved Cases' value={total_approved._count.id?.toString()} />
-                    <Stat status='PENDING' title='Total Pending Cases' value={total_pending._count.id?.toString()} />
+                    <Stat status='APPROVED' title='Approved Cases' value={total_approved._count.id?.toString()} />
+                    <Stat status='PENDING' title='Pending Cases' value={total_pending._count.id?.toString()} />
                     <Stat status='FRESH' title='Fresh Cases' value={total_fresh._count.id?.toString()} />
-                    <Stat status='RENEWAL' title='Remaining Renewal Cases' value={total_renewal._count.id?.toString()} />
+                    <Stat status='RENEWAL' title='Renewal Cases' value={total_renewal._count.id?.toString()} />
                     <Stat status='DEFERRED' title='Deferred Cases' value={total_deferred._count.id?.toString()} /> 
                     <Stat status='REFUSED' title='Refused Cases' value={total_deferred._count.id?.toString()} /> 
                     {/* <Stat status='' title='Unknown' value={unknown._count.id?.toString()} />
