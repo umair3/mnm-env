@@ -1,6 +1,5 @@
 import { useRouter } from "next/navigation"
 import { FormEvent } from 'react'
-import { authenticate } from './lib/actions'
 
 export default function LoginForm() {
     const router = useRouter()
@@ -17,6 +16,7 @@ export default function LoginForm() {
             body: JSON.stringify({username, password})
         })
         if(response.ok) {
+            console.log('response.ok')
             router.push('/cases')
         } else {
             // handle errors
