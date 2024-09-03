@@ -17,5 +17,3 @@ export default function CaseStatusField(props: any) {
         </div>
     )
 }
-
-
