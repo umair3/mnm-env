@@ -15,8 +15,8 @@ export default function Stat(stat: {title: string, value: string | undefined, st
                     <img class="img-fluid" src="img/icon-apartment.png" alt="Icon">
                     <Image src="/img/icon-apartment.png" alt="Icon" width={100} height={100}/>
                 </div> */}
-                <h4 className='font-bold'>{stat.title}</h4>
-                <span>{stat.value}</span>
+                <h3 className="font-black text-xl">{stat.title}</h3>
+                <span className="text-xl">{stat.value}</span>
             </div>
         </a>
     </div>

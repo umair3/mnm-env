@@ -11,19 +11,45 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum ValidityStatus {
+  DEFERRED
+  EXPIRED
+  PENDING
+  REJECTED
+  VALID
+}
+
+enum Type {
+  Renewal
+  Fresh
+}
+
+enum Category {
+  EIA
+  IEE
+}
+
+enum Proponent {
+  DEPARTMENT
+  PRIVATE
+}
+
 model Approval {
   id                           Int                     @id @default(autoincrement())
   date                         DateTime
+  field_office                 String?
   district                     String
+  division                     String?
   mineral                      String
   title_of_lease               String
-  reserve_price                Int?                    @default(0)
-  bid_money                    Int?                    @default(0)
-  nature_of_case               String?
+  proponent                    Proponent
+  acreage                      Float?
+  financial_impact             Int?                    @default(0)
+  category                     Category?
+  type                         Type?
   date_of_approval_renewal     DateTime?               @db.Date
   date_of_expiry               DateTime?               @db.Date
-  csrs                         String?
-  status                       String?
+  validity_status              ValidityStatus?
   sir_conducted                String?
   compliance_status            String?
   date_of_filing               DateTime?               @db.Date

@@ -7,6 +7,8 @@ import { FieldOfficeProps } from './field-office-dropdown'
 import { PrismaClient } from '@prisma/client'
 import DateField from './date-field'
 import DateRangeField from './date-range-field'
+import CategoryDropdown from './category-dropdown'
+import TypeDropdown from './type-dropdown'
 
 const prisma = new PrismaClient()
 
@@ -72,20 +74,32 @@ export default async function StatsList() {
         },
     })
 
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Set the time to the start of the day
+
+    const total_expired = await prisma.approval.aggregate({
+    _count: {
+        id: true,
+    },
+    where: {
+        date_of_expiry: {
+        lt: today,
+        },
+    },
+    });
+
+    console.log(total_expired);
+
     return (
         <div className="container-xxl py-5">
             <div className="container">
                 <div className="flex">
-                    <DistrictDropdown handleSelectChange={handleSelectChange} />
-                    <MineralDropdown handleSelectChange={handleSelectChange} />
-                    <DateRangeField />
-                </div>
-                <div className="flex">
                     <Stat status='' title='Total Cases' value={total_cases._count.id?.toString()} />
-                    <Stat status='APPROVED' title='Approved Cases' value={total_approved._count.id?.toString()} />
+                    <Stat status='VALID_APPROVALS' title='Valid Approvals' value={total_approved._count.id?.toString()} />
+                    <Stat status='EXPIRED' title='Expired Cases' value={total_expired._count.id?.toString()} /> 
                     <Stat status='PENDING' title='Pending Cases' value={total_pending._count.id?.toString()} />
-                    <Stat status='FRESH' title='Fresh Cases' value={total_fresh._count.id?.toString()} />
-                    <Stat status='RENEWAL' title='Renewal Cases' value={total_renewal._count.id?.toString()} />
+                    {/* <Stat status='FRESH' title='Fresh Cases' value={total_fresh._count.id?.toString()} />
+                    <Stat status='RENEWAL' title='Renewal Cases' value={total_renewal._count.id?.toString()} /> */}
                     <Stat status='DEFERRED' title='Deferred Cases' value={total_deferred._count.id?.toString()} /> 
                     <Stat status='REFUSED' title='Refused Cases' value={total_deferred._count.id?.toString()} /> 
                     {/* <Stat status='' title='Unknown' value={unknown._count.id?.toString()} />
@@ -93,6 +107,15 @@ export default async function StatsList() {
                         return <Stat title={item.title} value={item.value} />
                     })} */}
                 </div>
+                <h3 className='h2'>Search</h3>
+                <div className="flex">
+                    <CategoryDropdown handleSelectChange={handleSelectChange} />
+                    <TypeDropdown handleSelectChange={handleSelectChange} />
+                    <DistrictDropdown handleSelectChange={handleSelectChange} />
+                    <MineralDropdown handleSelectChange={handleSelectChange} />
+                    <DateRangeField />
+                </div>
+                <h3 className='h2'>Enter New Record</h3>
             </div>
         </div>
     )

@@ -46,6 +46,7 @@ class Office {
 
 const field_offices_list: any = {
     "ATTOCK": new Office("Assistant Director", "", District.ATTOCK),
+    "BAHAWALNAGAR": new Office("Assistant Director", "", District.BAHAWALPUR),
     "BAHAWALPUR": new Office("Assistant Director", "", District.BAHAWALPUR),
     "CHAKWAL": new Office("Assistant Director", "", District.CHAKWAL),
     "CHINIOT": new Office("Assistant Director", "", District.CHINIOT),
