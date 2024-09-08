@@ -50,8 +50,6 @@ model Approval {
   date_of_approval_renewal     DateTime?               @db.Date
   date_of_expiry               DateTime?               @db.Date
   validity_status              ValidityStatus?
-  sir_conducted                String?
-  compliance_status            String?
   date_of_filing               DateTime?               @db.Date
   remarks                      String?
 }
