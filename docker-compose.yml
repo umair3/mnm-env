@@ -1,9 +1,15 @@
-version: '3'
 services:
-  your-app:
+  frontend:
     build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: efd_portal
+      context: ./nextjs-app
     ports:
-      - "8080:80"  # Adjust the port as needed
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: web
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
